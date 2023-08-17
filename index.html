@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Miguel Angel Rebollar Tagle - Portafolio</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1d1d1d;
+            color: #726f74;
+        }
+        /* Estilos del encabezado */
+        header {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #7c1569;
+            color: #ffffff;
+        }
+        h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        /* Estilos de la barra de navegación */
+        nav {
+            text-align: center;
+            background-color: #353535;
+            color: #2d94a2;
+            padding: 10px;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav li {
+            display: inline;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+        /* Estilos de la sección de proyectos */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+        .project-card {
+            background-color: #565353;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        .project-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px 8px 0 0;
+        }
+        .project-card h3 {
+            margin: 15px 0;
+            font-size: 20px;
+            color: #ffffff;
+        }
+        /* Estilos de los detalles del proyecto */
+        .project-details {
+            display: none;
+            padding: 20px;
+            background-color: #2e2e2e;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .project-details h2 {
+            margin-top: 0;
+            font-size: 24px;
+            color: #ffffff;
+        }
+        .project-details p {
+            color: #ffffff;
+        }
+        /* Estilos del pie de página */
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #2e2e2e;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2 style="font-family: 'Your-Gothic-Font', sans-serif;"> Miguel Rebollar</h>
+        <h1>Frontend Developer</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li class="project">"La creatividad es la inteligencia divirtiendose."</li>
+            
+        </ul>
+    </nav>
+
+    <div class="projects">
+        <div class="project-card" data-project="web">
+            <img src="IMAGENES/desarrolloweb.jpg" alt="Proyecto Web" width="100px" height="100px">
+            <h3>DESARROLLO WEB</h3>
+        </div>
+        <div class="project-card" data-project="mobile">
+            <img src="IMAGENES/desarrollomovil.jpg" alt="Proyecto Móvil" width="100px" height="100px">
+            <h3>DESARROLLO MOVIL</h3>
+        </div>
+        <div class="project-card" data-project="otro">
+            <img src="IMAGENES/redesyprogramacion.jpg" alt="Otro Proyecto" width="100px" height="100px"> 
+            <h3>PROGRAMACION DE REDES</h3>
+        </div>
+        <div class="project-card" data-project="contacto">
+            <img src="IMAGENES/contacto.jpg" alt="Proyecto Web" width="100px" height="100px">
+            <h3>INFORMACION Y CONTACTO</h3>
+        </div>
+    </div>
+
+    <section class="project-details" id="web">
+        <h2>DESARROLLO WEB</h2>
+        <p>Diseño sitios y desarrollo sus funciones, esto mediante lenguajes de programación y softwares especializados (HTML,CSS, JAVASCRIPT) y he realizado proyectos como:</p>
+        <a><p>PAGINA WEB PARA UNA CARPINTERIA.</p>
+        <img src="IMAGENES/ramak.jpg" height="400px" width="800px"></a>
+        <a><p>REGISTRO PARA UNA RED SOCIAL A FUTURO.</p>
+        <img src="IMAGENES/loguin.jpg" height="500px" width="800px"></a>
+    </section>
+    <section class="project-details" id="mobile">
+        <h2>DESARROLLO MOVIL</h2>
+        <p>JAVA, KOTLIN, SWIFT, DART, PYTHON, para el desarrollo nativo y multiplataforma, los cuales utilicé en:</p>
+        <a><img src="IMAGENES/calculadora.jpg" height="300px" width="500px" ></a>
+        <a><img src="IMAGENES/snake.jpg" height="300px" width="500px" ></a>
+        <a><img src="IMAGENES/cronometro.jpg" height="300px" width="500px" ></a>
+        <a><img src="IMAGENES/python.jpg" height="300px" width="500px" ></a>
+    </section>
+    <section class="project-details" id="otro">
+        <h2>REDES Y PROGRAMACION</h2>
+        <p>Dar mantenimiento predictivo y administrar redes PAN, WPAN, LAN, WLAN, aqui algunos ejemplos con topologia:</p>
+        <a><img src="IMAGENES/cisco1.jpg" height="300px" width="500px" ></a>
+        <a><img src="IMAGENES/cisco2.jpg" height="300px" width="500px" ></a>
+        <a><img src="IMAGENES/cisco3.jpg" height="300px" width="500px" ></a>
+        <a><img src="IMAGENES/cisco4.jpg" height="300px" width="500px" ></a>
+    </section>
+    <section class="project-details" id="contacto">
+        <h2>INFORMACION Y CONTACTO</h2>
+        <p>Mi nombre es Miguel Angel, vivo en CDMX, soy estudiante de la Ingenieria en sistemas computacionales, actualmente curso el 6to. semestre y me especializo en programacion y redes
+            <ul>
+                <a href="https://wa.me/5541112262?text= Hola, quiero información." target="_blank"><img src="IMAGENES/wa.jpg"  height="100px" width="100px"></a>
+            
+            </ul>
+        </p>
+    </section>
+
+    
+
+    <footer>
+        &copy; 2023 Miguel Angel Rebollar Tagle
+    </footer>
+
+    <script>
+        const projectCards = document.querySelectorAll('.project-card');
+        const projectDetails = document.querySelectorAll('.project-details');
+
+        projectCards.forEach(card => {
+            card.addEventListener('click', () => {
+                const projectId = card.getAttribute('data-project');
+                projectDetails.forEach(detail => {
+                    detail.style.display = 'none';
+                });
+                document.getElementById(projectId).style.display = 'block';
+            });
+        });
+    </script>
+</body>
+</html>
